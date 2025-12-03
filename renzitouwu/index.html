@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Adiviná el Jugador</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="container">
+    <h1 class="title">Adiviná el Jugador ⚽🔥</h1>
+
+    <div class="card">
+        <p id="hint">Pista: ???</p>
+
+        <input type="text" id="answer" placeholder="Escribí el nombre..." />
+
+        <button onclick="checkAnswer()">Adivinar</button>
+
+        <p id="result"></p>
+
+        <p class="lives">Vidas restantes: <span id="lives">3</span></p>
+
+        <button id="nextBtn" onclick="nextPlayer()" class="hidden">
+            Siguiente jugador
+        </button>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
